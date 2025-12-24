@@ -1,0 +1,58 @@
+Build a full-stack web application called “Unified Farm Intelligence Platform (UFIP)”.
+
+Core concept:
+The Farmer’s Calendar is the brain of the system, providing GPS- and climate-based farm advisories and activity logging.
+Blockchain is the backbone of the system, storing immutable proofs of farm activities, carbon data, and food traceability records.
+
+User roles:
+1. Farmer
+2. Processor
+3. Retailer
+4. Input Provider
+5. Financial Provider
+6. Regulatory Agency
+7. Public Consumer (read-only via QR scan)
+
+Main services (integrated into one app):
+
+SERVICE 1: Climate-Smart Farmer’s Calendar (Primary Interface)
+- Farmers register farm plots using GPS coordinates (latitude, longitude).
+- The calendar generates seasonal, climate-based advisories using weather data and crop type.
+- Advisories include planting, irrigation, fertilizer timing, pest/disease alerts, and harvest guidance.
+- Farmers log daily farm activities through the calendar (planting, spraying, irrigation, harvesting).
+- The calendar adapts dynamically based on rainfall, temperature, and seasonal forecasts.
+- The calendar is the main data input point for the entire system.
+
+SERVICE 2: Blockchain Food Traceability (Backbone)
+- Each farm plot and harvest creates a unique Batch ID.
+- All critical events (planting, harvest, processing, transport, storage) are recorded as traceability events.
+- Event data is stored in a database and documents/photos are stored on IPFS.
+- Hashes of Batch IDs, event records, and IPFS CIDs are written to the blockchain using smart contracts.
+- A QR code is generated for each batch so buyers, regulators, and consumers can view the full farm-to-fork history.
+- Blockchain data is immutable and verifiable.
+
+SERVICE 3: Carbon Footprint & Carbon Credit Tracking
+- Carbon calculations are automatically derived from farm activities logged in the Farmer’s Calendar.
+- Emissions are calculated per batch using standard carbon methodologies.
+- A digital carbon certificate is generated for each batch.
+- The hash of the carbon certificate is anchored to the blockchain and linked to the batch.
+- Carbon data is viewable by farmers, buyers, financial institutions, and regulators.
+
+Dashboards by role:
+- Farmer dashboard: calendar, advisories, map view, activity logging, batch list, carbon summary.
+- Processor dashboard: batch intake, processing events, document uploads.
+- Retailer dashboard: product verification, traceability views, sustainability data.
+- Input provider dashboard: advisory alignment and input recommendations.
+- Financial provider dashboard: verified production data and carbon metrics.
+- Regulator dashboard: audit-ready traceability and compliance data.
+- Consumer view: QR code scan to see product origin, farm story, and carbon footprint.
+
+Technical requirements:
+- Frontend: web app with role-based access.
+- Backend: API with write protection and role permissions.
+- Storage: database for fast queries, IPFS for documents.
+- Blockchain: smart contracts store hashes only (batch IDs, trace events, carbon certificates).
+- The system reconciles database records with blockchain records to ensure integrity.
+
+Goal:
+Create a unified, blockchain-backed agricultural platform where the farmer’s calendar drives intelligence, and blockchain guarantees trust across the entire food supply chain.
