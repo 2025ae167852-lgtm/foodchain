@@ -1,16 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Router } from "wouter"; from "react-router-dom";
-import App from "./App";p";
-import "./index.css";import "./index.css";
+import { Router } from "wouter";
+import App from "./App";
+import "./index.css";
 
-createRoot(document.getElementById("root")!).render(createRoot(document.getElementById("root")!).render(
-
-
-
-
-
-);  </Router>    <App />  <Router base="/foodchain">  <BrowserRouter basename="/foodchain/">
-    <App />
-  </BrowserRouter>
+createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <Router base="/foodchain">
+      <App />
+    </Router>
+  </React.StrictMode>
 );
