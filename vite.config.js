@@ -9,5 +9,4 @@ export default defineConfig({
       '@shared': path.resolve(__dirname, 'client/shared'),
     },
   },
-  // ...existing config...
 });
