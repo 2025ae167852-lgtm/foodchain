@@ -1,7 +1,7 @@
 # Unified Farm Intelligence Platform (UFIP)
 
 ## Overview
-Unified Farm is a full-stack platform for farm management, traceability, carbon tracking, and multi-role collaboration, leveraging blockchain and IPFS for trust and transparency.
+Unified Farm is a full-stack platform for farm management, traceability, carbon tracking, and multi-role collaboration, leveraging blockchain and IPFS for trust and transpa
 
 ## Core Services
 - **Farm Management & Calendar**: Farmers log activities, view advisories, and manage plots with map and calendar UI.
